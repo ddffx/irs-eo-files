@@ -1,0 +1,40 @@
+{
+  "name": "irs-eo-files",
+  "version": "0.0.0",
+  "description": "IRS EO file API",
+  "license": "MIT",
+  "repository": "ddffx/irs-eo-files",
+  "author": {
+    "name": "",
+    "email": "",
+    "url": "na"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    ""
+  ],
+  "dependencies": {
+    "datasets-us-states-abbr": "^1.0.0",
+    "map-limit": "^0.0.1",
+    "request": "^2.79.0"
+  },
+  "devDependencies": {
+    "ava": "^0.17.0",
+    "xo": "^0.17.0"
+  },
+  "xo": {
+    "esnext": true,
+    "ignore": [
+        "test.js",
+	      "!{test/,}fixture{s,}/**"
+    ]
+  }
+}
