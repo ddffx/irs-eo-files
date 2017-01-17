@@ -7,11 +7,11 @@
   - Clone the repo
   ```
   git clone
-  
   ```
-  - Get inside `cd irs-eo-files`
-  - Install require components `docker-compose run --rm app yarn install`
-  - Run test `docker-compose run --rm app npm test`
+  - Get inside the directory `cd irs-eo-files`
+  
+  - Install required components `docker-compose run --rm app yarn install`
+  - Run tests `docker-compose run --rm app npm test`
 
 ## Usage
 
