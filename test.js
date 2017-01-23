@@ -15,7 +15,8 @@ test.cb('Get IRS File Meta Info', t => {
 });
 
 test.cb('Get IRS File Meta Info for one region', t => {
-	getEOFilesMeta('1',(err, res) => {
+	const region = '1';
+	getEOFilesMeta(region,(err, res) => {
 		if (err) {
 			t.fail();
 		} else {

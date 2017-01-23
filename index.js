@@ -15,6 +15,7 @@ const allFiles = states.concat(others);
 const mapl = require("map-limit");
 
 const irsEndpoint = 'https://www.irs.gov/pub/irs-soi/eo';
+// https://www.irs.gov/charities-non-profits/exempt-organizations-business-master-file-extract-eo-bmf
 // https://www.irs.gov/pub/irs-soi/eo_fl.csv
 const reqLimit = 5;
 
@@ -30,7 +31,6 @@ const getEOFilesMeta = (region, done) => {
 		const stem = isNaN(region) ? '_' : '';
 		
 		const url = `${irsEndpoint}${stem}${region.toLowerCase()}.csv`;
-		console
 		r.head(url, (err, resp) => {
 			if (err) {
 				next(err, null);
@@ -61,3 +61,11 @@ const getEOFilesMeta = (region, done) => {
 	});
 };
 module.exports = getEOFilesMeta;
+/** quick way to test the function */
+// getEOFilesMeta('CA', (err, res) =>{
+// 	if(err){
+// 		console.log(err)
+// 	} else {
+// 		console.log(res);
+// 	}
+// })
