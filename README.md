@@ -2,44 +2,39 @@
 
 > IRS EO file API
 
-
-## Install
-
-```
-$ npm install --save irs-eo-files
-```
-
+## Develop
+  - Install Docker & Docker Compose
+  - Clone the repo
+  ```
+  git clone
+  ```
+  - Get inside the directory `cd irs-eo-files`
+  
+  - Install required components `docker-compose run --rm app yarn install`
+  - Run tests `docker-compose run --rm app npm test`
 
 ## Usage
 
 ```js
 const irsEoFiles = require('irs-eo-files');
 
-irsEoFiles('unicorns');
-
 ```
 
 
 ## API
 
-### irsEoFiles(input, [options])
+### irsEoFiles(region, callback)
 
-#### input
+#### region
 
-Type: `string`
+Type: `string` optional
 
-Lorem ipsum.
+CA
+#### callback
+Type: `function` 
 
-#### options
-
-##### foo
-
-Type: `boolean`<br>
-Default: `false`
-
-Lorem ipsum.
 
 
 ## License
 
-MIT © [](http://na)
+MIT © [ddffx](http://twitter.com/ddffx)
